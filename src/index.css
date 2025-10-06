@@ -52,11 +52,11 @@ body {
 }
 
 .animate-slide-in {
-  animation: slide-in 0.3s ease-out forwards;
+  animation: slide-in 0.5s ease-out forwards;
 }
 
 .animate-slide-out {
-  animation: slide-out 0.3s ease-in forwards;
+  animation: slide-out 0.5s ease-in forwards;
 }
 
 
@@ -92,5 +92,51 @@ body {
 }
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+/* Profile image glowPulse animation */
+@keyframes glowPulse {
+  0% {
+    opacity: 0.6;
+    box-shadow: 0 0 25px 6px var(--color-main), 0 0 50px 15px var(--color-main);
+  }
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 35px 10px var(--color-main), 0 0 60px 20px var(--color-main);
+  }
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fadeUp 1.2s ease-out both;
+}
+
+/* Skill Bar Grow Animation */
+@keyframes skillBarGrow {
+  0% { width: 0%; }
+  100% { width: var(--width); }
+}
+.animate-skill-bar {
+  animation: skillBarGrow 2s ease-out forwards;
+}
+
+/* Optional: Glowing effect for skill bars */
+@keyframes glowSkill {
+  0% { box-shadow: 0 0 5px var(--color-main); }
+  50% { box-shadow: 0 0 15px var(--color-main); }
+  100% { box-shadow: 0 0 5px var(--color-main); }
+}
+.skill-bar-glow {
+  animation: glowSkill 1.5s ease-in-out infinite;
 }
 

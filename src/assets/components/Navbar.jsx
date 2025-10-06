@@ -43,7 +43,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-20 relative">
         {/* Logo */}
         <div
-          className="text-2xl font-bold cursor-pointer"
+            className="text-2xl font-bold cursor-pointer animate-slide-in"
           style={{
             color: darkMode ? "var(--color-main)" : "var(--color-bg)",
             fontFamily: "var(--font-serif)",
@@ -54,7 +54,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
         {/* Desktop Menu (centered) */}
         <ul
-          className="hidden md:flex space-x-12 font-medium absolute left-1/2 transform -translate-x-1/2"
+            className="hidden md:flex space-x-12 font-medium absolute left-1/2 transform -translate-x-1/2 animate-fade-up"
           style={{ fontFamily: "var(--font-sans)" }}
         >
           {links.map((link) => (
