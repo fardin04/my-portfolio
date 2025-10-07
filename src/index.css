@@ -140,3 +140,19 @@ body {
   animation: glowSkill 1.5s ease-in-out infinite;
 }
 
+
+@keyframes overlayFadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-overlay-fade {
+  animation: overlayFadeIn 0.8s ease-out both;
+}
+
+@keyframes glowHover {
+  0%, 100% { box-shadow: 0 0 10px var(--color-main); }
+  50% { box-shadow: 0 0 25px var(--color-main); }
+}
+.animate-glow-hover:hover {
+  animation: glowHover 1.2s ease-in-out infinite alternate;
+}

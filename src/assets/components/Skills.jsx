@@ -6,18 +6,18 @@ import {
 import { FaDatabase, FaFileWord, FaRobot, FaGitAlt } from "react-icons/fa";
 
 const skillsData = [
-  { name: "HTML5", icon: <SiHtml5 />, width: "80%" },
-  { name: "CSS3", icon: <SiCss3 />, width: "70%" },
+  { name: "React Js", icon: <SiReact />, width: "75%" },
   { name: "JavaScript", icon: <SiJavascript />, width: "70%" },
-  { name: "Bootstrap", icon: <SiBootstrap />, width: "75%" },
-  { name: "Tailwind CSS", icon: <SiTailwindcss />, width: "70%" },
   { name: "Node JS", icon: <SiNodedotjs />, width: "70%" },
   { name: "MongoDB", icon: <FaDatabase />, width: "60%" },
-  { name: "MS Office", icon: <FaFileWord />, width: "85%" },
   { name: "Git", icon: <FaGitAlt />, width: "70%" },
   { name: "GitHub", icon: <SiGithub />, width: "75%" },
+  { name: "MS Office", icon: <FaFileWord />, width: "85%" },
+  { name: "Tailwind CSS", icon: <SiTailwindcss />, width: "75%" },
+  { name: "Bootstrap", icon: <SiBootstrap />, width: "70%" },
+  { name: "CSS3", icon: <SiCss3 />, width: "80%" },
+  { name: "HTML5", icon: <SiHtml5 />, width: "85%" },
   { name: "Generative AI", icon: <FaRobot />, width: "65%" },
-  { name: "React Js", icon: <SiReact />, width: "75%" },
 ];
 
 const Skills = ({ darkMode }) => {
@@ -93,13 +93,12 @@ const Skills = ({ darkMode }) => {
               </span>
               <div className="progress-line relative w-full h-4 rounded-full overflow-hidden bg-[var(--color-bg-secondary)]">
                 <span
-  className={`absolute h-full rounded-full bg-[var(--color-main)] skill-bar-glow transition-all duration-1500 ease-out`}
-  style={{
-    width: animate ? skill.width : "0%",
-    transitionDelay: `${idx * 150}ms`
-  }}
-></span>
-
+                  className={`block h-full rounded-full bg-[var(--color-main)] skill-bar-glow transition-all duration-1500 ease-out`}
+                  style={{
+                    width: animate ? skill.width : "0%",
+                    transitionDelay: `${idx * 150}ms`
+                  }}
+                ></span>
               </div>
             </div>
           </div>

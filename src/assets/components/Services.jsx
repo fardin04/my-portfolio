@@ -75,7 +75,7 @@ const Service = ({ darkMode }) => {
               darkMode
                 ? "bg-[rgba(255,255,255,0.05)]"
                 : "bg-[rgba(178,34,52,0.1)]"
-            } hover:scale-105 hover:border-2 hover:border-main cursor-pointer`}
+            } hover:scale-105  hover:border-main cursor-pointer`}
             style={{ transition: "all 0.5s ease" }}
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow =
