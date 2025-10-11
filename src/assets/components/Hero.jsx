@@ -85,7 +85,7 @@ const Hero = ({ darkMode }) => {
           style={{ marginBottom: "10px", marginLeft: "35px" }}
         >
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/fardinhasanmayen/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
@@ -94,7 +94,7 @@ const Hero = ({ darkMode }) => {
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com/yourprofile"
+            href="https://github.com/fardin04"
             target="_blank"
             rel="noopener noreferrer"
            className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
@@ -102,7 +102,7 @@ const Hero = ({ darkMode }) => {
             <FaGithub />
           </a>
           <a
-            href="https://facebook.com/yourprofile"
+            href="https://www.facebook.com/fardin.hasan.mayen.000"
             target="_blank"
             rel="noopener noreferrer"
             className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
@@ -110,7 +110,7 @@ const Hero = ({ darkMode }) => {
             <FaFacebook />
           </a>
           <a
-            href="https://instagram.com/yourprofile"
+            href="https://www.instagram.com/__fardin__hasan__/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"

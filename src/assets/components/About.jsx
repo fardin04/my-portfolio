@@ -66,7 +66,7 @@ const About = ({ darkMode }) => {
             } animate-fade-up`}
           style={{ fontFamily: "var(--font-serif)",fontSize:"2.5rem" }}
         >
-          About <span className="text-[var(--color-main)]">me</span>
+          About <span className="text-[var(--color-main)]">Me</span>
         </h2>
         <p className="text-lg leading-relaxed font-sans mb-5">
           I'm <span className="text-[var(--color-main)] font-bold"><strong>Fardin Hasan Mayen</strong></span>,a dedicated 
