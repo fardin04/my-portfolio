@@ -61,10 +61,10 @@ const About = ({ darkMode }) => {
           }`}
       >
         <h2
-            className={`text-3xl sm:text-4xl md:text-5xl mb-6 font-semibold opacity-0 transform translate-y-6 animate-slide-in ${
+            className={`text-3xl sm:text-4xl md:text-5xl  font-semibold opacity-0 transform translate-y-6 animate-slide-in ${
               animate ? "opacity-100 translate-y-0 transition-all duration-400 delay-200" : ""
             } animate-fade-up`}
-          style={{ fontFamily: "var(--font-serif)",fontSize:"2.5rem" }}
+          style={{ fontFamily: "var(--font-serif)",fontSize:"2.5rem",marginBottom:"3rem" }}
         >
           About <span className="text-[var(--color-main)]">Me</span>
         </h2>
