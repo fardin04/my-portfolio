@@ -14,7 +14,7 @@ const Hero = ({ darkMode }) => {
   return (
     <section
       id="home"
-      className="w-full min-h-screen relative flex flex-col md:flex-row items-center justify-center px-6 md:px-20 overflow-hidden transition-colors duration-500"
+      className="w-full min-h-screen relative flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 md:px-20 gap-10 sm:gap-0 overflow-hidden transition-colors duration-500"
       style={{
         backgroundColor: darkMode ? "var(--color-bg)" : "#F5E8E8",
         color: darkMode ? "var(--color-text)" : "var(--color-bg)",
@@ -39,7 +39,7 @@ const Hero = ({ darkMode }) => {
 
         {/* Name */}
         <h2
-            className={`text-4xl md:text-4.5xl font-bold opacity-0 leading-[1.1] transform translate-y-6 animate-slide-in ${
+            className={`text-3xl sm:text-4xl md:text-4xl font-bold opacity-0 leading-[1.1] transform translate-y-6 animate-slide-in  ${
               animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-400" : ""
             } animate-fade-up`}
           style={{ fontFamily: "var(--font-serif)" }}
@@ -49,7 +49,7 @@ const Hero = ({ darkMode }) => {
 
         {/* Typewriter with "And I'm" */}
         <h3
-            className={`text-2xl md:text-3xl font-semibold opacity-0 leading-[1.1] transform translate-y-6 animate-fade-up ${
+            className={`text-xl sm:text-2xl md:text-3xl font-semibold opacity-0 leading-[1.2] transform translate-y-6 animate-fade-up ${
               animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-600" : ""
             }`}
           style={{ marginBottom: "5px", fontFamily: "var(--font-serif)" }}
@@ -70,7 +70,7 @@ const Hero = ({ darkMode }) => {
           </span>
         </h3>
         <p
-          className={`text-textCustom whitespace-nowrap opacity-0 transform translate-y-6 ${
+          className={`text-textCustom text-sm sm:text-base text-center md:text-left opacity-0 transform translate-y-6 ${
             animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-700" : ""
           }`}
         >
@@ -79,7 +79,7 @@ const Hero = ({ darkMode }) => {
 
         {/* Social Icons */}
         <div
-          className={`flex space-x-4 mt-4 justify-start w-full opacity-0 transform translate-y-6 ${
+          className={`flex space-x-4 mt-4 justify-center md:justify-start w-full opacity-0 transform translate-y-6 ${
             animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-800" : ""
           }`}
           style={{ marginBottom: "10px", marginLeft: "35px" }}
@@ -121,7 +121,7 @@ const Hero = ({ darkMode }) => {
 
         {/* Download Resume Button*/}
         <div
-          className={`mt-4 flex justify-start w-full opacity-0 transform translate-y-6 ${
+          className={`mt-6 flex justify-center md:justify-start w-full opacity-0 transform translate-y-6   ${
             animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-1000" : ""
           }`}
           
@@ -146,7 +146,7 @@ const Hero = ({ darkMode }) => {
       </div>
 
       {/* Right: Profile Image with floating animation and glowing effect */}
-      <div className="flex-1 mt-10 md:mt-0 flex justify-center md:justify-end z-10">
+      <div className="flex-1 mt-8 md:mt-0 flex justify-center md:justify-end z-10">
         <div
           className="relative animate-slide-in"
           style={{

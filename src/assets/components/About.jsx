@@ -13,7 +13,7 @@ const About = ({ darkMode }) => {
   return (
     <section
       id="about"
-      className="w-full min-h-screen relative flex flex-col md:flex-row items-center justify-center px-6 md:px-20 overflow-hidden transition-colors duration-500"
+      className="w-full min-h-screen relative flex flex-col md:flex-row items-center justify-center px-6 md:px-20 gap-10 md:gap-20 overflow-hidden transition-colors duration-500"
       style={{
         backgroundColor: darkMode ? "var(--color-bg-secondary)" : "#F5E8E8",
         color: darkMode ? "var(--color-text)" : "var(--color-bg)",
@@ -31,8 +31,8 @@ const About = ({ darkMode }) => {
       {/* Left: Image */}
       <div
           className={`flex-1 flex justify-center md:justify-start opacity-0 transform translate-y-6 animate-slide-in ${
-            animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-200" : ""
-          } animate-fade-up`}
+    animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-200" : ""
+  } animate-fade-up`}
       >
         <div className="relative">
           <span
@@ -48,7 +48,7 @@ const About = ({ darkMode }) => {
           <img
             src={aboutPic}
             alt="Fardin Hasan Mayen"
-            className="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover shadow-2xl hover:scale-105 transition-transform duration-500 animate-float relative"
+            className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover shadow-2xl hover:scale-105 transition-transform duration-500 animate-float relative"
             style={{ zIndex: 1 }}
           />
         </div>
@@ -56,19 +56,19 @@ const About = ({ darkMode }) => {
 
       {/* Right: Text */}
       <div
-          className={`flex-1  md:mt-0 text-center md:text-left opacity-0 transform translate-y-6 animate-fade-up ${
+          className={`flex-1 mt-8 md:mt-0 text-center md:text-left opacity-0 transform translate-y-6 animate-fade-up ${
             animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-400" : ""
           }`}
       >
         <h2
-            className={`text-3xl md:text-4xl mb-15 font-semibold opacity-0 transform translate-y-6 animate-slide-in ${
+            className={`text-3xl sm:text-4xl md:text-5xl mb-6 font-semibold opacity-0 transform translate-y-6 animate-slide-in ${
               animate ? "opacity-100 translate-y-0 transition-all duration-400 delay-200" : ""
             } animate-fade-up`}
           style={{ fontFamily: "var(--font-serif)",fontSize:"2.5rem" }}
         >
           About <span className="text-[var(--color-main)]">Me</span>
         </h2>
-        <p className="text-lg leading-relaxed font-sans mb-5">
+        <p className="text-base sm:text-lg leading-relaxed font-sans mb-5 px-2 sm:px-0">
           I'm <span className="text-[var(--color-main)] font-bold"><strong>Fardin Hasan Mayen</strong></span>,a dedicated 
           <span className="font-semibold"> Full-Stack Developer</span>. with a passion for building intuitive and impactful digital experiences. I blend strong computer science fundamentals with a creative eye to engineer robust solutions from front-end to back-end.
 

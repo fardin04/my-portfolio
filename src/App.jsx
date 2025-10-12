@@ -6,6 +6,7 @@ import Service from './assets/components/Services'
 import Skills from './assets/components/Skills'
 import Projects from './assets/components/Projects'
 import Contact from './assets/components/Contact'
+import Footer from './assets/components/Footer'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
       <Projects darkMode={darkMode} />
       {/* Contact Section */}
       <Contact darkMode={darkMode} />
+
+      {/* Footer Section */}
+      <Footer darkMode={darkMode} />
 
       
     </div>
