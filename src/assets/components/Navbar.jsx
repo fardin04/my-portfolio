@@ -40,7 +40,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className="fixed w-full z-50 transition-colors duration-500"
+      className="fixed w-full z-50 transition-colors duration-500 overflow-hidden"
       style={{
         backgroundColor: darkMode ? "var(--color-bg)" : "var(--color-text)",
       }}

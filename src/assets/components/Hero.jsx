@@ -14,47 +14,42 @@ const Hero = ({ darkMode }) => {
   return (
     <section
       id="home"
-      className="w-full min-h-screen relative flex flex-col md:flex-row items-center justify-center px-4 sm:px-6 md:px-20 gap-10 sm:gap-0 overflow-hidden transition-colors duration-500"
+      className="w-full min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-10 px-4 sm:px-8 lg:px-20 py-16 md:py-0 relative overflow-hidden transition-colors duration-500"
       style={{
         backgroundColor: darkMode ? "var(--color-bg)" : "#F5E8E8",
         color: darkMode ? "var(--color-text)" : "var(--color-bg)",
       }}
     >
-      {/* Floating Background Shapes */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-main opacity-20 rounded-full animate-bounce-slow"></div>
-      <div className="absolute bottom-20 right-20 w-40 h-40 bg-main opacity-10 rounded-full animate-ping-slow"></div>
-      <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-main opacity-15 rounded-full animate-spin-slow"></div>
-
-      {/* Left Text */}
-      <div className="flex-1 flex flex-col items-start md:items-start space-y-4 z-10">
-        {/* Hi, I'm */}
+      <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left space-y-5 z-10">
         <h1
-            className={`text-3xl md:text-4xl font-semibold opacity-0 transform translate-y-6 animate-slide-in ${
-              animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-200" : ""
-            } animate-fade-up`}
+          className={`text-2xl sm:text-3xl md:text-4xl font-semibold opacity-0 translate-y-6 ${
+            animate
+              ? "opacity-100 translate-y-0 transition-all duration-700 delay-200 animate-slide-in"
+              : ""
+          } animate-fade-up`}
           style={{ fontFamily: "var(--font-serif)" }}
         >
           Hi, I’m
         </h1>
-
-        {/* Name */}
         <h2
-            className={`text-3xl sm:text-4xl md:text-4xl font-bold opacity-0 leading-[1.1] transform translate-y-6 animate-slide-in  ${
-              animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-400" : ""
-            } animate-fade-up`}
+          className={`text-3xl sm:text-4xl md:text-5xl font-bold leading-tight opacity-0 translate-y-6 ${
+            animate
+              ? "opacity-100 translate-y-0 transition-all duration-700 delay-400 animate-slide-in"
+              : ""
+          } animate-fade-up`}
           style={{ fontFamily: "var(--font-serif)" }}
         >
           Fardin Hasan Mayen
         </h2>
-
-        {/* Typewriter with "And I'm" */}
         <h3
-            className={`text-xl sm:text-2xl md:text-3xl font-semibold opacity-0 leading-[1.2] transform translate-y-6 animate-fade-up ${
-              animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-600" : ""
-            }`}
-          style={{ marginBottom: "5px", fontFamily: "var(--font-serif)" }}
+          className={`text-lg sm:text-xl md:text-2xl font-semibold opacity-0 translate-y-6 ${
+            animate
+              ? "opacity-100 translate-y-0 transition-all duration-700 delay-600 animate-fade-up"
+              : ""
+          }`}
+          style={{ fontFamily: "var(--font-serif)" }}
         >
-          <span className="text-textCustom font-semibold" style={{ fontFamily: "var(--font-serif)" }}>
+          <span className="text-textCustom font-semibold">
             And I’m{" "}
           </span>
           <span className="font-bold text-main">
@@ -70,19 +65,20 @@ const Hero = ({ darkMode }) => {
           </span>
         </h3>
         <p
-          className={`text-textCustom text-sm sm:text-base text-center md:text-left opacity-0 transform translate-y-6 ${
-            animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-700" : ""
+          className={`text-sm sm:text-base md:text-lg text-textCustom opacity-0 translate-y-6 ${
+            animate
+              ? "opacity-100 translate-y-0 transition-all duration-700 delay-700 animate-fade-up"
+              : ""
           }`}
         >
           Computer Science Enthusiast Seeking Exciting Career Opportunities!!
         </p>
-
-        {/* Social Icons */}
         <div
-          className={`flex space-x-4 mt-4 justify-center md:justify-start w-full opacity-0 transform translate-y-6 ${
-            animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-800" : ""
+          className={`flex flex-wrap items-center justify-center md:justify-start gap-4 w-full opacity-0 translate-y-6 ${
+            animate
+              ? "opacity-100 translate-y-0 transition-all duration-700 delay-800 animate-fade-up"
+              : ""
           }`}
-          style={{ marginBottom: "10px", marginLeft: "35px" }}
         >
           <a
             href="https://www.linkedin.com/in/fardinhasanmayen/"
@@ -118,13 +114,12 @@ const Hero = ({ darkMode }) => {
             <FaInstagram />
           </a>
         </div>
-
-        {/* Download Resume Button*/}
         <div
-          className={`mt-6 flex justify-center md:justify-start w-full opacity-0 transform translate-y-6   ${
-            animate ? "opacity-100 translate-y-0 transition-all duration-700 delay-1000" : ""
+          className={`w-full flex justify-center md:justify-start opacity-0 translate-y-6 ${
+            animate
+              ? "opacity-100 translate-y-0 transition-all duration-700 delay-1000 animate-fade-up"
+              : ""
           }`}
-          
         >
          <a
     href={resume}
@@ -145,20 +140,17 @@ const Hero = ({ darkMode }) => {
         </div>
       </div>
 
-      {/* Right: Profile Image with floating animation and glowing effect */}
-      <div className="flex-1 mt-8 md:mt-0 flex justify-center md:justify-end z-10">
+      <div className="flex-1 w-full flex justify-center md:justify-end z-10">
         <div
           className="relative animate-slide-in"
-          style={{
-            display: "inline-block",
-          }}
+          style={{ display: "inline-block" }}
         >
           <span
             className="absolute inset-0 rounded-full pointer-events-none"
             style={{
               boxShadow:
-                "0 0 40px 10px var(--color-main), 0 0 80px 30px var(--color-main)",
-              opacity: 0.6,
+                "0 0 30px 8px var(--color-main), 0 0 60px 24px var(--color-main)",
+              opacity: 0.5,
               zIndex: 0,
               animation: "glowPulse 2s infinite alternate",
             }}
@@ -166,13 +158,11 @@ const Hero = ({ darkMode }) => {
           <img
             src={profilePic}
             alt="Fardin Hasan Mayen"
-            className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl hover:scale-105 transition-transform duration-500 animate-float relative"
+            className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 xl:w-80 xl:h-80 rounded-full object-cover shadow-2xl hover:scale-105 transition-transform duration-500 animate-float relative"
             style={{ zIndex: 1 }}
           />
         </div>
       </div>
-      {/* Add keyframes for glowPulse animation */}
-    {/* glowPulse keyframes moved to index.css */}
     </section>
   );
 };

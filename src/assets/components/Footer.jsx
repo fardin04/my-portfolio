@@ -20,21 +20,15 @@ const Footer = ({ darkMode }) => {
   return (
     <footer
       id="footer"
-      className="w-full relative flex justify-between items-center flex-wrap py-2 md:px-20 overflow-hidden transition-colors duration-500"
+      className="w-full relative flex flex-wrap items-center justify-center md:justify-between gap-6 px-4 sm:px-10 lg:px-20 py-10 md:py-8 overflow-hidden transition-colors duration-500"
       style={{
         backgroundColor: darkMode ? "var(--color-bg-main)" : "#F5E8E8",
         color: darkMode ? "var(--color-text)" : "var(--color-bg)",
       }}
     >
-      {/* Floating Background Shapes */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-main opacity-20 rounded-full animate-bounce-slow"></div>
-      <div className="absolute bottom-20 right-20 w-40 h-40 bg-main opacity-10 rounded-full animate-ping-slow"></div>
-      <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-main opacity-15 rounded-full animate-spin-slow"></div>
-
-      {/* Left Section - Copyright */}
-      <div className="flex-1 flex-col md:text-left items-start md:items-start opacity-0 transform translate-y-6 animate-slide-in animate-fade-up">
+      <div className="order-1 md:order-none flex-1 min-w-[220px] flex justify-center mb-5 md:justify-start opacity-0 translate-y-6 animate-slide-in animate-fade-up">
         <p
-          className={`text-textCustom font-medium text-start mb-10 text-sm md:text-base ${
+          className={`text-textCustom font-medium text-sm sm:text-base text-center md:text-left ${
             animate
               ? "opacity-100 translate-y-0 transition-all duration-700 delay-200"
               : ""
@@ -48,14 +42,12 @@ const Footer = ({ darkMode }) => {
         </p>
       </div>
 
-      {/* Center Section - Social Media Icons */}
       <div
-        className={`flex space-x-4 opacity-0 transform translate-y-6 ${
+        className={`order-2 md:order-none flex justify-center gap-4 flex-wrap min-w-[220px] mb-5 opacity-0 translate-y-6 ${
           animate
-            ? "opacity-100 translate-y-0 transition-all duration-700 delay-800"
+            ? "opacity-100 translate-y-0 transition-all duration-700 delay-350"
             : ""
         }`}
-        style={{ marginBottom: "40px", marginLeft: "35px" }}
       >
         <a
           href="https://www.facebook.com/fardin.hasan.mayen.000"
@@ -91,16 +83,16 @@ const Footer = ({ darkMode }) => {
         </a>
       </div>
 
-      {/* Right Section - Back to Top Button */}
       <div
-        onClick={scrollToTop} // 👈 triggers smooth scroll
-        className={`flex ml-5 p-2 bg-[var(--color-main)] rounded-lg cursor-pointer transition-all duration-500 hover:shadow-[0_0_1rem_var(--color-main)] ${
+        onClick={scrollToTop}
+        className={`order-3 md:order-none flex items-center justify-center p-3 mt-5 bg-[var(--color-main)] rounded-lg cursor-pointer transition-all duration-500 hover:shadow-[0_0_1rem_var(--color-main)] ${
           animate
-            ? "opacity-100 translate-y-0 transition-all duration-700 delay-800"
+            ? "opacity-100 translate-y-0 transition-all duration-700 delay-500"
             : ""
         }`}
+        
       >
-        <FaAngleUp className="text-[1.6rem] text-[var(--color-bg-secondary)] transition-all duration-300" />
+        <FaAngleUp className="text-2xl text-[var(--color-bg-secondary)] transition-all duration-300" />
       </div>
     </footer>
   );
