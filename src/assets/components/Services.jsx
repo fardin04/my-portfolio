@@ -32,7 +32,7 @@ const Service = ({ darkMode }) => {
   return (
     <section
       id="services"
-      className="w-full min-h-screen relative flex flex-col items-center justify-center px-6 md:px-20 overflow-hidden transition-colors duration-500"
+      className="w-full min-h-screen relative flex flex-col items-center justify-center px-6 md:px-20 mt-15 sm:mt-16 pb-16 sm:pb-24   overflow-x-hidden transition-colors duration-500"
       style={{
         backgroundColor: darkMode ? "var(--color-bg)" : "#F5E8E8",
         color: darkMode ? "var(--color-text)" : "var(--color-bg)",

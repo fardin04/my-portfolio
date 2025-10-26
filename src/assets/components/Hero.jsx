@@ -142,7 +142,7 @@ const Hero = ({ darkMode }) => {
 
       <div className="flex-1 w-full flex justify-center md:justify-end z-10">
         <div
-          className="relative animate-slide-in"
+          className="relative animate-slide-in w-61 h-61 sm:w-57 sm:h-57 md:w-73 md:h-73 xl:w-80 xl:h-80 mt-25 opacity-0 translate-y-10"
           style={{ display: "inline-block" }}
         >
           <span
@@ -158,7 +158,7 @@ const Hero = ({ darkMode }) => {
           <img
             src={profilePic}
             alt="Fardin Hasan Mayen"
-            className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 xl:w-80 xl:h-80 rounded-full object-cover shadow-2xl hover:scale-105 transition-transform duration-500 animate-float relative"
+            className="w-60 h-60 sm:w-56 sm:h-56 md:w-72 md:h-72 xl:w-80 xl:h-80 rounded-full object-cover shadow-2xl hover:scale-105 transition-transform duration-500 animate-float relative"
             style={{ zIndex: 1 }}
           />
         </div>

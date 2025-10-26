@@ -1,90 +1,104 @@
 import React, { useEffect, useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import bloxImage from "../images/projects/blox-image.jpeg"
-import tutorTrackImage from "../images/projects/tutor-track-image.jpeg"
-import puaicImage from "../images/projects/puaic-image.jpeg"
-import quizAppImage from "../images/projects/quiz-app-image.png"
-import pupcImage from "../images/projects/pupc-image.jpeg"
-import basicEcomImage from "../images/projects/basic-Ecom-image.png"
-import osintImage from "../images/projects/osint-image.png"
-import portfolioImage from "../images/projects/portfolio-image.jpeg"
-import weatherAppImage from "../images/projects/weather-app-image.png"
-import landingPageImage from "../images/projects/landing-page-image.png"
-import stopWatchImage from "../images/projects/stopwatch-image.png"
-
-
+import bloxImage from "../images/projects/blox-image.jpeg";
+import tutorTrackImage from "../images/projects/tutor-track-image.jpeg";
+import puaicImage from "../images/projects/puaic-image.jpeg";
+import quizAppImage from "../images/projects/quiz-app-image.png";
+import pupcImage from "../images/projects/pupc-image.jpeg";
+import basicEcomImage from "../images/projects/basic-Ecom-image.png";
+import osintImage from "../images/projects/osint-image.png";
+import portfolioImage from "../images/projects/portfolio-image.jpeg";
+import weatherAppImage from "../images/projects/weather-app-image.png";
+import landingPageImage from "../images/projects/landing-page-image.png";
+import stopWatchImage from "../images/projects/stopwatch-image.png";
 
 const Projects = ({ darkMode }) => {
   const [animate, setAnimate] = useState(false);
+  const [tappedIndex, setTappedIndex] = useState(null); 
 
   useEffect(() => {
     setAnimate(true);
   }, []);
 
+  const handleTap = (index) => {
+    setTappedIndex(tappedIndex === index ? null : index);
+  };
+
   const projects = [
     {
       title: "Bloxxx",
-      description: "A modern, full-featured blog application built with React, Vite, and Appwrite. This application allows users to create, read, update, and delete blog posts with featured images and rich text content",
+      description:
+        "A modern, full-featured blog application built with React, Vite, and Appwrite. This application allows users to create, read, update, and delete blog posts with featured images and rich text content",
       image: bloxImage,
       link: "https://bloxxx.netlify.app/",
     },
     {
       title: "Tutor Trackk",
-      description: "A React.js tutoring management system with automated scheduling, student tracking, and class logging features. Built with Appwrite backend and Tailwind CSS.",
+      description:
+        "A React.js tutoring management system with automated scheduling, student tracking, and class logging features. Built with Appwrite backend and Tailwind CSS.",
       image: tutorTrackImage,
       link: "https://tutortrackk.netlify.app/",
     },
     {
       title: "Presidency University AI Club",
-      description: "Built the Presidency University AI Club website using HTML, CSS, and JavaScript, ensuring a responsive design, smooth navigation, and an engaging user experience.",
+      description:
+        "Built the Presidency University AI Club website using HTML, CSS, and JavaScript, ensuring a responsive design, smooth navigation, and an engaging user experience.",
       image: puaicImage,
       link: "https://puaic.netlify.app/",
     },
     {
       title: "Quiz App",
-      description: "An engaging quiz app developed with HTML, CSS, and JavaScript. Designed to provide a dynamic learning experience with interactive questions, real-time feedback, and an intuitive user interface.",
+      description:
+        "An engaging quiz app developed with HTML, CSS, and JavaScript. Designed to provide a dynamic learning experience with interactive questions, real-time feedback, and an intuitive user interface.",
       image: quizAppImage,
       link: "https://fardin04.github.io/Demo-Quiz-App/",
     },
     {
       title: "PUPC",
-      description: "Developed the club's official ex-website with a responsive, interactive image gallery.Used vanilla JavaScript to create smooth animations for an elegant cross-device experience.",
+      description:
+        "Developed the club's official ex-website with a responsive, interactive image gallery.Used vanilla JavaScript to create smooth animations for an elegant cross-device experience.",
       image: pupcImage,
       link: "https://fardin04.github.io/PUPC/",
     },
     {
       title: "E-Com Website",
-      description: "A simple e-commerce website built with HTML, CSS, and JavaScript. Designed to showcase products with a clean layout, this website features a shopping cart, product filtering, and a user-friendly interface.",
+      description:
+        "A simple e-commerce website built with HTML, CSS, and JavaScript. Designed to showcase products with a clean layout, this website features a shopping cart, product filtering, and a user-friendly interface.",
       image: basicEcomImage,
       link: "https://fardin04.github.io/Demo-Website/",
     },
     {
       title: "Portfolio Website",
-      description: " personal portfolio website showcasing my projects, skills, and experience. Built with HTML, CSS, and JavaScript, this site features a clean layout, responsive design, and smooth animations.",
+      description:
+        " personal portfolio website showcasing my projects, skills, and experience. Built with HTML, CSS, and JavaScript, this site features a clean layout, responsive design, and smooth animations.",
       image: portfolioImage,
       link: "https://fardin04.github.io/portfolio/",
     },
     {
       title: "OSINT Investigation",
-      description: "An intuitive OSINT platform for essential people-finding and basic investigations. Locate names, addresses, and contact information quickly for social and verification purposes.",
+      description:
+        "An intuitive OSINT platform for essential people-finding and basic investigations. Locate names, addresses, and contact information quickly for social and verification purposes.",
       image: osintImage,
       link: "https://www.fiverr.com/fardin__hasan__?up_rollout=true",
     },
     {
       title: "Weather App",
-      description: "A weather application that provides real-time weather updates and forecasts. Built with HTML, CSS, and JavaScript, this app fetches data from a weather API and displays it in a user-friendly interface.",
+      description:
+        "A weather application that provides real-time weather updates and forecasts. Built with HTML, CSS, and JavaScript, this app fetches data from a weather API and displays it in a user-friendly interface.",
       image: weatherAppImage,
       link: "https://fardin04.github.io/Weather-App/",
     },
     {
       title: "Landing Page",
-      description: "A responsive landing page designed to capture user interest and drive conversions. Built with HTML, CSS, and JavaScript, this landing page features a clean layout, engaging visuals, and clear calls to action.",
+      description:
+        "A responsive landing page designed to capture user interest and drive conversions. Built with HTML, CSS, and JavaScript, this landing page features a clean layout, engaging visuals, and clear calls to action.",
       image: landingPageImage,
       link: "https://fardin04.github.io/Landing_Page/",
     },
     {
       title: "Stopwatch App",
-      description: "A simple stopwatch application built with HTML, CSS, and JavaScript. This app allows users to start, stop, and reset a timer, making it perfect for timing activities or workouts.",
+      description:
+        "A simple stopwatch application built with HTML, CSS, and JavaScript. This app allows users to start, stop, and reset a timer, making it perfect for timing activities or workouts.",
       image: stopWatchImage,
       link: "https://fardin04.github.io/Stopwatch/",
     },
@@ -117,7 +131,9 @@ const Projects = ({ darkMode }) => {
         >
           My <span className="text-main">Projects</span>
         </h2>
-        <p className="text-lg font-sans">Some of my featured works and experiments</p>
+        <p className="text-lg font-sans">
+          Some of my featured works and experiments
+        </p>
       </div>
 
       {/* Project Cards */}
@@ -137,7 +153,7 @@ const Projects = ({ darkMode }) => {
                 : "bg-[rgba(178,34,52,0.1)]"
             } group hover:scale-105  hover:border-main cursor-pointer`}
             style={{
-                transition: "all 0.5s ease",
+              transition: "all 0.5s ease",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow =
@@ -146,6 +162,7 @@ const Projects = ({ darkMode }) => {
             onMouseLeave={(e) => {
               e.currentTarget.style.boxShadow = "";
             }}
+            onClick={() => handleTap(idx)}
           >
             <img
               src={project.image}
@@ -153,9 +170,17 @@ const Projects = ({ darkMode }) => {
               className="w-full h-64 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
             />
 
-            <div className="absolute inset-0 bg-[rgba(0,0,0,0.7)] flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-4">
-              <h3 className="text-2xl font-bold text-main mb-2">{project.title}</h3>
-              <p className="text-sm mb-4 font-sans text-white">{project.description}</p>
+            <div
+              className={`absolute inset-0 bg-[rgba(0,0,0,0.7)] flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center p-4 ${
+                tappedIndex === idx ? "opacity-100" : ""
+              }`}
+            >
+              <h3 className="text-2xl font-bold text-main mb-2">
+                {project.title}
+              </h3>
+              <p className="text-sm mb-4 font-sans text-white">
+                {project.description}
+              </p>
               <a
                 href={project.link}
                 target="_blank"
