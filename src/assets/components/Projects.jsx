@@ -11,10 +11,11 @@ import portfolioImage from "../images/projects/portfolio-image.jpeg";
 import weatherAppImage from "../images/projects/weather-app-image.png";
 import landingPageImage from "../images/projects/landing-page-image.png";
 import stopWatchImage from "../images/projects/stopwatch-image.png";
+import puFoundLostImage from "../images/projects/pu-found-lost-image.png";
 
 const Projects = ({ darkMode }) => {
   const [animate, setAnimate] = useState(false);
-  const [tappedIndex, setTappedIndex] = useState(null); 
+  const [tappedIndex, setTappedIndex] = useState(null);
 
   useEffect(() => {
     setAnimate(true);
@@ -25,6 +26,13 @@ const Projects = ({ darkMode }) => {
   };
 
   const projects = [
+    {
+      title: "PU Found & Lost Hub",
+      description:
+        "A community-focused web platform designed to streamline lost and found processes on campus. Built using React and Firebase this application features secure user authentication, dynamic item reporting with image uploads, and intuitive filtering to help reunite owners with their belongings.",
+      image: puFoundLostImage,
+      link: "https://pu-found-and-lost-hub.web.app/",
+    },
     {
       title: "Bloxxx",
       description:
