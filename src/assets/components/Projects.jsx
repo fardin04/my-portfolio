@@ -29,7 +29,7 @@ const Projects = ({ darkMode }) => {
     {
       title: "PU Found & Lost Hub",
       description:
-        "A community-focused web platform designed to streamline lost and found processes on campus. Built using React and Firebase this application features secure user authentication, dynamic item reporting with image uploads, and intuitive filtering to help reunite owners with their belongings.",
+        "A community-focused web platform designed to streamline lost and found processes on campus. This application helps users report and locate lost items efficiently.",
       image: puFoundLostImage,
       link: "https://pu-found-and-lost-hub.web.app/",
     },
