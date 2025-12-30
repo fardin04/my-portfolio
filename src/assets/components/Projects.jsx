@@ -12,6 +12,7 @@ import weatherAppImage from "../images/projects/weather-app-image.png";
 import landingPageImage from "../images/projects/landing-page-image.png";
 import stopWatchImage from "../images/projects/stopwatch-image.png";
 import puFoundLostImage from "../images/projects/pu-found-lost-image.png";
+import projectPulseImage from "../images/projects/project-pulse-image.png";
 
 const Projects = ({ darkMode }) => {
   const [animate, setAnimate] = useState(false);
@@ -26,6 +27,13 @@ const Projects = ({ darkMode }) => {
   };
 
   const projects = [
+    {
+      title: "Project Pulse",
+      description:
+        "A full-stack project tracking delivery performance through weekly check-ins, automated health scoring, and risk management. Built with React, TypeScript, and MongoDB.",
+      image: projectPulseImage,
+      link: "https://projectpluse.onrender.com/",
+    },
     {
       title: "PU Found & Lost Hub",
       description:

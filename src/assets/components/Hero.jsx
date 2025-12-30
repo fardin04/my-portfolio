@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 import profilePic from "../images/profile/fardin-profile-image.jpg";
-import resume from "../../../public/files/Resume of Fardin Hasan Mayen.pdf";
+import resume from "../../../public/files/Fardin_Hasan_Mayen_Resume.pdf";
 
 const Hero = ({ darkMode }) => {
   const [animate, setAnimate] = useState(false);
