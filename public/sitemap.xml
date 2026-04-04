@@ -6,32 +6,32 @@
     https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 >
   <url>
-    <loc>https://fardinhasanmayen.netlify.app/</loc>
+    <loc>https://fardinhasanmayen.dev/</loc>
     <lastmod>2025-10-11</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fardinhasanmayen.netlify.app/#about</loc>
+    <loc>https://fardinhasanmayen.dev/#about</loc>
     <lastmod>2025-10-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fardinhasanmayen.netlify.app/#services</loc>
+    <loc>https://fardinhasanmayen.dev/#services</loc>
     <lastmod>2025-10-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fardinhasanmayen.netlify.app/#skills</loc>
+    <loc>https://fardinhasanmayen.dev/#skills</loc>
     <lastmod>2025-10-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fardinhasanmayen.netlify.app/#projects</loc>
+    <loc>https://fardinhasanmayen.dev/#projects</loc>
     <lastmod>2025-10-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fardinhasanmayen.netlify.app/#contact</loc>
+    <loc>https://fardinhasanmayen.dev/#contact</loc>
     <lastmod>2025-10-11</lastmod>
     <priority>0.8</priority>
   </url>

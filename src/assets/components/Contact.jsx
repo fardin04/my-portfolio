@@ -3,6 +3,10 @@ import toast, { Toaster } from "react-hot-toast";
 
 const Contact = ({ darkMode }) => {
   const [animate, setAnimate] = useState(false);
+  const redirectUrl =
+    typeof window !== "undefined"
+      ? `${window.location.origin}/thanks.html`
+      : "https://fardinhasanmayen.dev/thanks.html";
 
   useEffect(() => {
     setAnimate(true);
@@ -92,7 +96,7 @@ const Contact = ({ darkMode }) => {
           <input
             type="hidden"
             name="_next"
-            value="https://fardinhasanmayen.netlify.app/thanks.html"
+            value={redirectUrl}
           />
           <input type="hidden" name="_captcha" value="false" />
 
