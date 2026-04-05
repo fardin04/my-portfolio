@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A0E14" />
+      <stop offset="1" stop-color="#3C1F26" />
+    </linearGradient>
+    <linearGradient id="accent" x1="260" y1="150" x2="940" y2="480" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B22234" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#F5E8E8" stop-opacity="0.75" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="48" fill="url(#bg)" />
+  <circle cx="1020" cy="120" r="150" fill="#B22234" fill-opacity="0.18" />
+  <circle cx="170" cy="520" r="180" fill="#B22234" fill-opacity="0.14" />
+  <rect x="96" y="96" width="1008" height="438" rx="36" stroke="url(#accent)" stroke-width="2" fill="rgba(255,255,255,0.02)" />
+  <text x="132" y="246" fill="#F5E8E8" font-size="72" font-family="Arial, Helvetica, sans-serif" font-weight="700">Fardin Hasan Mayen</text>
+  <text x="132" y="314" fill="#F5E8E8" font-size="34" font-family="Arial, Helvetica, sans-serif" opacity="0.92">Front-End Developer • Full-Stack Developer • OSINT Specialist</text>
+  <text x="132" y="384" fill="#F5E8E8" font-size="28" font-family="Arial, Helvetica, sans-serif" opacity="0.78">Portfolio and work showcase at fardinhasanmayen.dev</text>
+  <rect x="132" y="428" width="290" height="14" rx="7" fill="#B22234" />
+</svg>

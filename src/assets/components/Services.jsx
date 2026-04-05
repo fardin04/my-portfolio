@@ -52,6 +52,7 @@ const Service = ({ darkMode }) => {
         }`}
       >
         <h2
+          id="services-heading"
           className="text-4xl font-bold"
           style={{ fontFamily: "var(--font-serif)", marginBottom: "1rem" }}
         >
@@ -65,6 +66,8 @@ const Service = ({ darkMode }) => {
         {services.map((service, idx) => (
           <div
             key={service.title}
+            aria-labelledby={`service-${idx}-title`}
+            aria-describedby={`service-${idx}-description`}
             className={`p-6 rounded-2xl shadow-lg bg-opacity-10 backdrop-blur-md transition-all duration-300 transform opacity-0 translate-y-6 ${
               animate
                 ? `opacity-100 translate-y-0 transition-all duration-700 delay-${
@@ -86,9 +89,9 @@ const Service = ({ darkMode }) => {
             }}
           >
             <div className="flex flex-col items-center text-center">
-              {service.icon}
-              <h3 className="text-2xl font-bold mb-2 text-main">{service.title}</h3>
-              <p className="text-sm font-sans">{service.description}</p>
+              <div aria-hidden="true">{service.icon}</div>
+              <h3 id={`service-${idx}-title`} className="text-2xl font-bold mb-2 text-main">{service.title}</h3>
+              <p id={`service-${idx}-description`} className="text-sm font-sans">{service.description}</p>
             </div>
           </div>
         ))}

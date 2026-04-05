@@ -41,21 +41,24 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav
       className="fixed w-full z-50 transition-colors duration-500 overflow-hidden"
+      aria-label="Primary"
       style={{
         backgroundColor: darkMode ? "var(--color-bg)" : "var(--color-text)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-16 sm:h-20 relative">
         {/* Logo */}
-        <div
+        <a
+          href="#home"
           className="text-2xl font-bold cursor-pointer animate-slide-in"
+          aria-label="Go to Fardin Hasan Mayen home section"
           style={{
             color: darkMode ? "var(--color-main)" : "var(--color-bg)",
             fontFamily: "var(--font-serif)",
           }}
         >
-          Portfolio
-        </div>
+          Fardin Hasan Mayen
+        </a>
 
         {/* Desktop Menu (centered) */}
         <ul
@@ -73,7 +76,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   : "text-bg hover:text-main"
               }`}
             >
-              <a href={`#${link.toLowerCase()}`}>{link}</a>
+              <a
+                href={`#${link.toLowerCase()}`}
+                aria-label={`Go to ${link} section`}
+                aria-current={activeSection === link ? "page" : undefined}
+              >
+                {link}
+              </a>
             </li>
           ))}
         </ul>
@@ -81,22 +90,27 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         {/* Right icons: Dark Mode & Hamburger */}
         <div className="flex items-center space-x-4">
           {/* Dark mode toggle */}
-          <div
+          <button
+            type="button"
             className="cursor-pointer text-textCustom md:text-xl"
             onClick={toggleDarkMode}
-            aria-label="Toggle Dark Mode"
+            aria-label="Toggle dark mode"
+            title="Toggle dark mode"
           >
             {darkMode ? (
               <HiMoon size={24} />
             ) : (
               <HiSun size={24} style={{ color: "var(--color-main)" }} />
             )}
-          </div>
+          </button>
 
           {/* Hamburger */}
-          <div
+          <button
+            type="button"
             className="md:hidden cursor-pointer z-50 p-2 rounded-md active:scale-95 transition-transform"
             onClick={() => setNavOpen(!navOpen)}
+            aria-label={navOpen ? "Close navigation menu" : "Open navigation menu"}
+            title={navOpen ? "Close navigation menu" : "Open navigation menu"}
           >
             {navOpen ? (
               <HiX
@@ -113,7 +127,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 }}
               />
             )}
-          </div>
+          </button>
         </div>
       </div>
 
@@ -136,6 +150,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             key={link}
             href={`#${link.toLowerCase()}`}
             onClick={() => setNavOpen(false)}
+            aria-label={`Go to ${link} section`}
             className={`text-2xl cursor-pointer transition-colors duration-300 ${
               activeSection === link
                 ? "text-main"

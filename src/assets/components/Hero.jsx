@@ -84,6 +84,8 @@ const Hero = ({ darkMode }) => {
             href="https://www.linkedin.com/in/fardinhasanmayen/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Fardin Hasan Mayen on LinkedIn"
+            title="Visit Fardin Hasan Mayen on LinkedIn"
             className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
 
           >
@@ -93,6 +95,8 @@ const Hero = ({ darkMode }) => {
             href="https://github.com/fardin04"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Fardin Hasan Mayen on GitHub"
+            title="Visit Fardin Hasan Mayen on GitHub"
            className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
           >
             <FaGithub />
@@ -101,6 +105,8 @@ const Hero = ({ darkMode }) => {
             href="https://www.facebook.com/fardin.hasan.mayen.000"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Fardin Hasan Mayen on Facebook"
+            title="Visit Fardin Hasan Mayen on Facebook"
             className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
           >
             <FaFacebook />
@@ -109,6 +115,8 @@ const Hero = ({ darkMode }) => {
             href="https://www.instagram.com/__fardin__hasan__/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit Fardin Hasan Mayen on Instagram"
+            title="Visit Fardin Hasan Mayen on Instagram"
             className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
           >
             <FaInstagram />
@@ -124,6 +132,8 @@ const Hero = ({ darkMode }) => {
          <a
     href={resume}
     download="Resume of Fardin Hasan Mayen.pdf"
+    aria-label="Download Fardin Hasan Mayen resume PDF"
+    title="Download Fardin Hasan Mayen resume PDF"
     className="px-14 py-2 bg-main text-bg font-semibold rounded-full shadow-lg transition-all duration-300 hover:scale-105"
     style={{
       boxShadow: "0 0 5px 2px var(--color-main), 0 0 3px 2px var(--color-main)",
@@ -157,7 +167,8 @@ const Hero = ({ darkMode }) => {
           ></span>
           <img
             src={profilePic}
-            alt="Fardin Hasan Mayen"
+            alt="Portrait of Fardin Hasan Mayen, Front-End Developer and OSINT Specialist"
+            fetchPriority="high"
             className="w-60 h-60 sm:w-56 sm:h-56 md:w-72 md:h-72 xl:w-80 xl:h-80 rounded-full object-cover shadow-2xl hover:scale-105 transition-transform duration-500 animate-float relative"
             style={{ zIndex: 1 }}
           />

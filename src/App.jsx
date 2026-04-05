@@ -10,9 +10,6 @@ import Footer from './assets/components/Footer'
 import { useState, useEffect } from 'react'
 
 function App() {
-
- 
-
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem("darkMode");
     return savedMode ? JSON.parse(savedMode) : true;
@@ -36,25 +33,25 @@ function App() {
       }}
     >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Hero darkMode={darkMode} />
+      <main id="content">
+        <Hero darkMode={darkMode} />
 
-      {/* About Section */}
-      <About darkMode={darkMode} />
+        {/* About Section */}
+        <About darkMode={darkMode} />
 
-      {/* Services Section */}
-      <Service darkMode={darkMode} />
-      {/* Skills Section */}
-      <Skills darkMode={darkMode} />
+        {/* Services Section */}
+        <Service darkMode={darkMode} />
+        {/* Skills Section */}
+        <Skills darkMode={darkMode} />
 
-      {/* Projects Section */}
-      <Projects darkMode={darkMode} />
-      {/* Contact Section */}
-      <Contact darkMode={darkMode} />
+        {/* Projects Section */}
+        <Projects darkMode={darkMode} />
+        {/* Contact Section */}
+        <Contact darkMode={darkMode} />
+      </main>
 
       {/* Footer Section */}
       <Footer darkMode={darkMode} />
-
-      
     </div>
   )
 }

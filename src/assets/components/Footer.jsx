@@ -36,9 +36,9 @@ const Footer = ({ darkMode }) => {
         >
           Copyright &copy; {currentYear} by{" "}
           <span className="text-[var(--color-main)] font-semibold">
-            @Fardin Hasan Mayen
+            Fardin Hasan Mayen
           </span>{" "}
-          | All Rights Reserved.
+          | All Rights Reserved. | fardinhasanmayen.dev
         </p>
       </div>
 
@@ -53,6 +53,8 @@ const Footer = ({ darkMode }) => {
           href="https://www.facebook.com/fardin.hasan.mayen.000"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Fardin Hasan Mayen on Facebook"
+          title="Visit Fardin Hasan Mayen on Facebook"
           className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
         >
           <FaFacebook />
@@ -61,6 +63,8 @@ const Footer = ({ darkMode }) => {
           href="https://www.instagram.com/__fardin__hasan__/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Fardin Hasan Mayen on Instagram"
+          title="Visit Fardin Hasan Mayen on Instagram"
           className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
         >
           <FaInstagram />
@@ -69,6 +73,8 @@ const Footer = ({ darkMode }) => {
           href="https://github.com/fardin04"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Fardin Hasan Mayen on GitHub"
+          title="Visit Fardin Hasan Mayen on GitHub"
           className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
         >
           <FaGithub />
@@ -77,23 +83,27 @@ const Footer = ({ darkMode }) => {
           href="https://www.linkedin.com/in/fardinhasanmayen/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Fardin Hasan Mayen on LinkedIn"
+          title="Visit Fardin Hasan Mayen on LinkedIn"
           className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-main text-main transition-all duration-300 hover:bg-main hover:text-bg"
         >
           <FaLinkedin />
         </a>
       </div>
 
-      <div
+      <button
+        type="button"
         onClick={scrollToTop}
         className={`order-3 md:order-none flex items-center justify-center p-3 mt-5 bg-[var(--color-main)] rounded-lg cursor-pointer transition-all duration-500 hover:shadow-[0_0_1rem_var(--color-main)] ${
           animate
             ? "opacity-100 translate-y-0 transition-all duration-700 delay-500"
             : ""
         }`}
-        
+        aria-label="Scroll back to top"
+        title="Scroll back to top"
       >
         <FaAngleUp className="text-2xl text-[var(--color-bg-secondary)] transition-all duration-300" />
-      </div>
+      </button>
     </footer>
   );
 };

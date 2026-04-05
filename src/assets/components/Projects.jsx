@@ -32,6 +32,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A full-stack project tracking delivery performance through weekly check-ins, automated health scoring, and risk management. Built with React, TypeScript, and MongoDB.",
       image: projectPulseImage,
+      alt: "Project Pulse dashboard preview by Fardin Hasan Mayen",
       link: "https://projectpluse.onrender.com/",
     },
     {
@@ -39,6 +40,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A community-focused web platform designed to streamline lost and found processes on campus. This application helps users report and locate lost items efficiently.",
       image: puFoundLostImage,
+      alt: "PU Found and Lost Hub project preview by Fardin Hasan Mayen",
       link: "https://pu-found-and-lost-hub.web.app/",
     },
     {
@@ -46,6 +48,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A modern, full-featured blog application built with React, Vite, and Appwrite. This application allows users to create, read, update, and delete blog posts with featured images and rich text content",
       image: bloxImage,
+      alt: "Bloxxx blog platform preview by Fardin Hasan Mayen",
       link: "https://bloxxx.netlify.app/",
     },
     {
@@ -53,6 +56,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A React.js tutoring management system with automated scheduling, student tracking, and class logging features. Built with Appwrite backend and Tailwind CSS.",
       image: tutorTrackImage,
+      alt: "Tutor Trackk tutoring management app preview by Fardin Hasan Mayen",
       link: "https://tutortrackk.netlify.app/",
     },
     {
@@ -60,6 +64,7 @@ const Projects = ({ darkMode }) => {
       description:
         "Built the Presidency University AI Club website using HTML, CSS, and JavaScript, ensuring a responsive design, smooth navigation, and an engaging user experience.",
       image: puaicImage,
+      alt: "Presidency University AI Club website preview by Fardin Hasan Mayen",
       link: "https://puaic.netlify.app/",
     },
     {
@@ -67,6 +72,7 @@ const Projects = ({ darkMode }) => {
       description:
         "An engaging quiz app developed with HTML, CSS, and JavaScript. Designed to provide a dynamic learning experience with interactive questions, real-time feedback, and an intuitive user interface.",
       image: quizAppImage,
+      alt: "Quiz App interface preview by Fardin Hasan Mayen",
       link: "https://fardin04.github.io/Demo-Quiz-App/",
     },
     {
@@ -74,6 +80,7 @@ const Projects = ({ darkMode }) => {
       description:
         "Developed the club's official ex-website with a responsive, interactive image gallery.Used vanilla JavaScript to create smooth animations for an elegant cross-device experience.",
       image: pupcImage,
+      alt: "PUPC website preview by Fardin Hasan Mayen",
       link: "https://fardin04.github.io/PUPC/",
     },
     {
@@ -81,6 +88,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A simple e-commerce website built with HTML, CSS, and JavaScript. Designed to showcase products with a clean layout, this website features a shopping cart, product filtering, and a user-friendly interface.",
       image: basicEcomImage,
+      alt: "E-commerce website preview by Fardin Hasan Mayen",
       link: "https://fardin04.github.io/Demo-Website/",
     },
     {
@@ -88,6 +96,7 @@ const Projects = ({ darkMode }) => {
       description:
         " personal portfolio website showcasing my projects, skills, and experience. Built with HTML, CSS, and JavaScript, this site features a clean layout, responsive design, and smooth animations.",
       image: portfolioImage,
+      alt: "Portfolio website preview by Fardin Hasan Mayen",
       link: "https://fardin04.github.io/portfolio/",
     },
     {
@@ -95,6 +104,7 @@ const Projects = ({ darkMode }) => {
       description:
         "An intuitive OSINT platform for essential people-finding and basic investigations. Locate names, addresses, and contact information quickly for social and verification purposes.",
       image: osintImage,
+      alt: "OSINT investigation platform preview by Fardin Hasan Mayen",
       link: "https://www.fiverr.com/fardin__hasan__?up_rollout=true",
     },
     {
@@ -102,6 +112,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A weather application that provides real-time weather updates and forecasts. Built with HTML, CSS, and JavaScript, this app fetches data from a weather API and displays it in a user-friendly interface.",
       image: weatherAppImage,
+      alt: "Weather App preview by Fardin Hasan Mayen",
       link: "https://fardin04.github.io/Weather-App/",
     },
     {
@@ -109,6 +120,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A responsive landing page designed to capture user interest and drive conversions. Built with HTML, CSS, and JavaScript, this landing page features a clean layout, engaging visuals, and clear calls to action.",
       image: landingPageImage,
+      alt: "Landing page design preview by Fardin Hasan Mayen",
       link: "https://fardin04.github.io/Landing_Page/",
     },
     {
@@ -116,6 +128,7 @@ const Projects = ({ darkMode }) => {
       description:
         "A simple stopwatch application built with HTML, CSS, and JavaScript. This app allows users to start, stop, and reset a timer, making it perfect for timing activities or workouts.",
       image: stopWatchImage,
+      alt: "Stopwatch app preview by Fardin Hasan Mayen",
       link: "https://fardin04.github.io/Stopwatch/",
     },
   ];
@@ -182,7 +195,9 @@ const Projects = ({ darkMode }) => {
           >
             <img
               src={project.image}
-              alt={project.title}
+              alt={project.alt}
+              loading="lazy"
+              decoding="async"
               className="w-full h-64 object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110"
             />
 

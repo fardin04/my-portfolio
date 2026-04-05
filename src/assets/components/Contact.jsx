@@ -92,6 +92,8 @@ const Contact = ({ darkMode }) => {
           method="POST"
           className="flex flex-col gap-6"
         >
+          <fieldset className="contents">
+            <legend className="sr-only">Contact form for Fardin Hasan Mayen</legend>
           {/* Hidden Form Fields */}
           <input
             type="hidden"
@@ -102,31 +104,42 @@ const Contact = ({ darkMode }) => {
 
           {/* Row 1: Name + Email */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <label className="sr-only" htmlFor="full-name">Full Name</label>
             <input
+              id="full-name"
               type="text"
               name="Full Name"
               placeholder="Full Name"
               required
+              autoComplete="name"
               className="p-4 w-full rounded-lg text-[var(--color-text)] bg-[var(--color-bg)] outline-none focus:ring-2 focus:ring-[var(--color-main)] transition-all duration-300"
             />
+            <label className="sr-only" htmlFor="email-address">Email Address</label>
             <input
+              id="email-address"
               type="email"
               name="Email"
               placeholder="Email Address"
               required
+              autoComplete="email"
               className="p-4 w-full rounded-lg text-[var(--color-text)] bg-[var(--color-bg)] outline-none focus:ring-2 focus:ring-[var(--color-main)] transition-all duration-300"
             />
           </div>
 
           {/* Row 2: Number + Subject */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <label className="sr-only" htmlFor="mobile-number">Mobile Number</label>
             <input
+              id="mobile-number"
               type="tel"
               name="Mobile Number"
               placeholder="Mobile Number"
+              autoComplete="tel"
               className="p-4 w-full rounded-lg text-[var(--color-text)] bg-[var(--color-bg)] outline-none focus:ring-2 focus:ring-[var(--color-main)] transition-all duration-300"
             />
+            <label className="sr-only" htmlFor="subject-line">Subject</label>
             <input
+              id="subject-line"
               type="text"
               name="Subject"
               placeholder="Subject"
@@ -135,10 +148,13 @@ const Contact = ({ darkMode }) => {
           </div>
 
           {/* Row 3: Message */}
+          <label className="sr-only" htmlFor="message-box">Your Message</label>
           <textarea
+            id="message-box"
             name="Message"
             placeholder="Your Message"
             required
+            autoComplete="off"
             className="p-4 w-full rounded-lg h-40 resize-none text-[var(--color-text)] bg-[var(--color-bg)] outline-none focus:ring-2 focus:ring-[var(--color-main)] transition-all duration-300"
           ></textarea>
 
@@ -151,6 +167,7 @@ const Contact = ({ darkMode }) => {
               Send Message
             </button>
           </div>
+          </fieldset>
         </form>
       </div>
 

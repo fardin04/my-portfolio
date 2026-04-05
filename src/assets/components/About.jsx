@@ -61,7 +61,9 @@ const About = ({ darkMode }) => {
             <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src={aboutPic}
-                alt="Fardin Hasan Mayen"
+                alt="Fardin Hasan Mayen profile photo for the about section"
+                loading="lazy"
+                decoding="async"
                 className={`w-full h-full object-cover transform group-hover:scale-100 group-hover:translate-x-0 transition-transform duration-1000 ease-in-out ${
                   isTapped
                     ? "scale-100 translate-x-0"
