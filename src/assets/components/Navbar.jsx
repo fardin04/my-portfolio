@@ -57,7 +57,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             fontFamily: "var(--font-serif)",
           }}
         >
-          Fardin Hasan Mayen
+          
         </a>
 
         {/* Desktop Menu (centered) */}

@@ -13,6 +13,7 @@ import landingPageImage from "../images/projects/landing-page-image.png";
 import stopWatchImage from "../images/projects/stopwatch-image.png";
 import puFoundLostImage from "../images/projects/pu-found-lost-image.png";
 import projectPulseImage from "../images/projects/project-pulse-image.png";
+import babyShopImage from "../images/projects/fullstack-ecom-image.png";
 
 const Projects = ({ darkMode }) => {
   const [animate, setAnimate] = useState(false);
@@ -27,6 +28,14 @@ const Projects = ({ darkMode }) => {
   };
 
   const projects = [
+    {
+      title: "Baby Shop E-Com",
+      description:
+        "A full-stack e-com platform built with React,Node.js,and MongoDB.Allows users to browse products,add items to cart,and complete purchases with a secure process.Admin panel for product management and order tracking.",
+      image: babyShopImage,
+      alt: "Baby Shop E-Commerce platform preview by Fardin Hasan Mayen",
+      link: "https://babyshopbytamanna.com/",
+    },
     {
       title: "Project Pulse",
       description:
