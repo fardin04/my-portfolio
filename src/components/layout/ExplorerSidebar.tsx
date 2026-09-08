@@ -11,7 +11,7 @@ import {
   Download,
 } from 'lucide-react';
 import { PageId } from '../../types';
-import { navigationTabs } from '../../data/portfolioData';
+import { developerProfile, navigationTabs } from '../../data/portfolioData';
 import { ReactIcon } from '../ui/Icons';
 
 interface ExplorerSidebarProps {
@@ -105,10 +105,10 @@ export const ExplorerSidebar: React.FC<ExplorerSidebarProps> = ({
                     <button
                       onClick={onResumeClick}
                       className="flex items-center gap-1.5 w-full px-2 py-1 hover:bg-[#2a2d2e] cursor-pointer text-left text-[#007acc] hover:text-[#38bdf8] rounded"
-                      title="Click to download Resume_Of_Fardin_Hasan.pdf"
+                      title={`Click to download ${developerProfile.resumeFileName}`}
                     >
                       <FileText className="w-3.5 h-3.5 text-[#e37933]" />
-                      <span>Resume_Of_Fardin_Hasan.pdf</span>
+                      <span>{developerProfile.resumeFileName}</span>
                     </button>
                   </div>
                 )}
@@ -197,7 +197,7 @@ export const ExplorerSidebar: React.FC<ExplorerSidebarProps> = ({
         <button
           onClick={onResumeClick}
           className="flex items-center justify-center gap-1.5 w-full px-2.5 py-1.5 rounded bg-[#007acc]/15 hover:bg-[#007acc]/25 border border-[#007acc]/40 text-[#9cdcfe] hover:text-white transition-all text-xs font-mono font-medium cursor-pointer"
-          title="Download Resume (Resume_Of_Fardin_Hasan.pdf)"
+          title={`Download Resume (${developerProfile.resumeFileName})`}
         >
           <Download className="w-3.5 h-3.5 text-[#007acc]" />
           <span>Download Resume</span>

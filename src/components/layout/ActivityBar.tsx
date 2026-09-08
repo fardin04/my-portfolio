@@ -112,7 +112,7 @@ export const ActivityBar: React.FC<ActivityBarProps> = ({
 
           {hoveredItem === 'resume' && (
             <div className="absolute left-12 ml-1 z-50 px-2 py-1 bg-[#252526] text-[#cccccc] text-[11px] rounded border border-[#3c3c3c] shadow-lg whitespace-nowrap pointer-events-none">
-              Resume_Of_Fardin_Hasan.pdf
+              {developerProfile.resumeFileName}
             </div>
           )}
         </div>

@@ -9,7 +9,7 @@ export const developerProfile: DeveloperProfile = {
   email: 'fardinhasan.mayen@gmail.com',
   openToWork: true,
   domain: 'fardinhasanmayen.dev',
-  resumeFileName: 'Resume_Of_Fardin_Hasan.pdf',
+  resumeFileName: 'Resume_Of_Fardin_Hasan .pdf',
   roles: [
     'Full-Stack Developer',
     'React & Next.js Enthusiast',

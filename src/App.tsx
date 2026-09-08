@@ -12,6 +12,7 @@ import { HomePage } from './components/pages/HomePage';
 import { AboutPage } from './components/pages/AboutPage';
 import { ProjectsPage } from './components/pages/ProjectsPage';
 import { ContactPage } from './components/pages/ContactPage';
+import { developerProfile } from './data/portfolioData';
 
 export default function App() {
   const [activePage, setActivePage] = useState<PageId>('home.tsx');
@@ -60,8 +61,8 @@ export default function App() {
 
   const handleResumeClick = () => {
     const link = document.createElement('a');
-    link.href = '/Resume_Of_Fardin_Hasan.pdf';
-    link.download = 'Resume_Of_Fardin_Hasan.pdf';
+    link.href = `/${encodeURIComponent(developerProfile.resumeFileName)}`;
+    link.download = developerProfile.resumeFileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

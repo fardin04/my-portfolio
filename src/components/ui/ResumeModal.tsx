@@ -27,7 +27,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           <div className="flex items-center justify-between px-5 py-3 bg-[#252526] border-b border-[#333333] text-xs">
             <div className="flex items-center gap-2 text-[#cccccc]">
               <span className="text-[#007acc]">📄</span>
-              <span className="font-semibold text-white">Resume_Of_Fardin_Hasan.pdf</span>
+              <span className="font-semibold text-white">{developerProfile.resumeFileName}</span>
               <span className="text-[#858585] hidden sm:inline">— Preview & Export</span>
             </div>
 
